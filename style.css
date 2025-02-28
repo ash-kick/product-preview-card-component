@@ -19,9 +19,83 @@
     font-style: normal;
   }
 
+/* CSS default/reset styling */
+
 html, body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
     font-size: 14px;
+}
+
+/* Global styling for document -- this section applies to mobile and desktop */
+
+/* Main box for perfume info and content */
+main {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+/* Product-type */
+h1 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-variant-caps: all-small-caps;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/* Perfume-title */
+h2 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    font-size: 40px;
+}
+
+/* Pricing */
+
+.price
+{
+    display: flex;
+    align-items: center;
+}
+
+#sale-price {
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+#full-price {
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+/* Button related details */
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#shopping-cart-icon {
+    width: 14px;
+    height: 14px;
+    align-self: center;
+}
+
+
+button {
+    display: flex;
+    flex-direction:row;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 5px;
 }
