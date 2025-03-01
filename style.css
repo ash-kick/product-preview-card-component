@@ -27,6 +27,7 @@ html, body {
     color: hsl(228, 12%, 48%);
     font-size: 14px;
     width: 100%;
+    height: 100%;
 }
 
 /* Global styling for document -- this section applies to mobile and desktop */
@@ -43,15 +44,19 @@ h1 {
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat';
     font-variant-caps: all-small-caps;
+    font-weight: 400;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 20px;
+    margin: 0;
 }
 
 /* Perfume-title */
 h2 {
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces';
-    font-size: 36px;
+    font-size: 32px;
+    margin-top: 10px;
+    line-height: 1;
 }
 
 .perfume-description {
@@ -64,20 +69,29 @@ h2 {
 {
     display: flex;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 #sale-price {
     font-family: 'Fraunces';
     color: hsl(158, 36%, 37%);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     padding-right: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    line-height: .5;
 }
 
 #full-price {
     font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 /* Button related details */
@@ -104,8 +118,9 @@ button {
     border: none;
     border-radius: 10px;
     background-color: hsl(158, 36%, 37%);
-    padding: 5px;
+    padding: 2px;
     width: 100%;
+    margin-top: 0;
 }
 
 /* Mobile Styling */
@@ -145,29 +160,28 @@ button {
 {
     body {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 
     main {
         display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-        max-width: 40%;
+        width: 40%;
+        height: 45%;
     }
 
     .product-image {
         width: 50%;
-        height: 100%;
         margin: 0;
         padding: 0;
+        overflow: hidden;
     }
 
     .product-details {
-        width: 50%;
-        margin: 20px;
+        width: 45%;
+        max-height: 100%;
+        margin: 25px;
     }
 
     #mobile-perfume-image {
@@ -175,7 +189,8 @@ button {
     }
 
     #desktop-perfume-image {
-        max-width: 100%;
+        min-width: 290px;
+        max-width: 375px;
     }
 
 }
