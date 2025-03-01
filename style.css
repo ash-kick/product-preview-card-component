@@ -26,15 +26,16 @@ html, body {
     font-family: 'Montserrat';
     color: hsl(228, 12%, 48%);
     font-size: 14px;
+    width: 100%;
 }
 
 /* Global styling for document -- this section applies to mobile and desktop */
 
 /* Main box for perfume info and content */
 main {
-    display: flex;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 /* Product-type */
@@ -50,7 +51,11 @@ h1 {
 h2 {
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces';
-    font-size: 40px;
+    font-size: 36px;
+}
+
+.perfume-description {
+    line-height: 2;
 }
 
 /* Pricing */
@@ -64,7 +69,7 @@ h2 {
 #sale-price {
     font-family: 'Fraunces';
     color: hsl(158, 36%, 37%);
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     padding-right: 20px;
 }
@@ -94,8 +99,83 @@ h3 {
 button {
     display: flex;
     flex-direction:row;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 10px;
     background-color: hsl(158, 36%, 37%);
     padding: 5px;
+    width: 100%;
+}
+
+/* Mobile Styling */
+
+@media (max-width: 1440px)
+{
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        max-width: 350px;
+    }
+
+    .product-details {
+        margin: 20px;
+    }
+
+    #mobile-perfume-image {
+        max-width: 350px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #desktop-perfume-image {
+        display: none;
+    }
+
+}
+
+/* Desktop Styling */
+
+@media (min-width: 1440px)
+{
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 40%;
+    }
+
+    .product-image {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-details {
+        width: 50%;
+        margin: 20px;
+    }
+
+    #mobile-perfume-image {
+        display: none;
+    }
+
+    #desktop-perfume-image {
+        max-width: 100%;
+    }
+
 }
