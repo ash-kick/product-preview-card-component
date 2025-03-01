@@ -36,7 +36,6 @@ html, body {
 main {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    overflow: hidden;
 }
 
 /* Product-type */
@@ -173,7 +172,7 @@ button:hover {
         display: flex;
         justify-content: center;
         width: 40%;
-        height: 45%;
+        height: 55%;
     }
 
     .product-image {
@@ -181,6 +180,8 @@ button:hover {
         margin: 0;
         padding: 0;
         overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .product-details {
