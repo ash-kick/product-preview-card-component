@@ -125,7 +125,7 @@ button {
 
 /* Mobile Styling */
 
-@media (max-width: 1440px)
+@media (max-width: 1300px)
 {
     body {
         display: flex;
@@ -156,7 +156,7 @@ button {
 
 /* Desktop Styling */
 
-@media (min-width: 1440px)
+@media (min-width: 1300px)
 {
     body {
         display: flex;
